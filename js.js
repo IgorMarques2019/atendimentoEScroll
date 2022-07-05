@@ -34,7 +34,7 @@ animaScroll()
 function OpenComerce(){
   const headerSpan = document.querySelector('header span')
   const dateSpan = new Date ();
-  const horarioComercial = dateSpan.getHours() >= 09 && dateSpan.getHours() <= 17;
+  const horarioComercial = dateSpan.getHours() >= 09 && dateSpan.getHours() <= 16;
   if(horarioComercial){
     headerSpan.classList.add('open')
     headerSpan.innerHTML = "abertos"
